@@ -1,0 +1,52 @@
+/*this is styling the all body because we dont want an space up*/
+body html{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+/*this is styling the all content in the main elements*/
+.main_docu{
+    
+    display: grid;
+     grid-template-columns: 1fr 4fr; 
+    grid-gap: 10px;
+    grid-template-areas: 
+    'block1 block2'
+}
+/*this a a div that is styling the sections in the dcumentation*/
+.main-content{
+    grid-area: block2;
+    background-color: rgba(235, 207, 207, 0.933);
+    height: 100vh;
+    border-left: #645 2px solid;
+    border-top: #645 2px solid;
+}
+/*this is also our second div that is styling the asides and the h4 tags*/
+.aside{
+    grid-area: block1;
+    background-color: rgb(159, 159, 165);
+    border-right: 2px solid blueviolet;
+    border-top: #645 2px solid;
+}
+/*still this styles the aside and puts in the border and cusor changes to a ka finger*/
+.aside h4{
+    border-bottom: 2px solid #645;
+    cursor: pointer;
+}
+
+/*this makes the aside h4 to be as if they are moving but in actual sense they are not*/
+.aside h4:hover{
+background-color: #645;
+padding: 4px;
+}
+/*this removes the content not to be displayed in the web unless sectionsare clicked on*/
+.content{
+    display: none;
+}  
+    /* visibility: hidden; */
+
+ /*this styles the code and example of the examples in the documentation from the html*/   
+code,pre{
+    background-color: #fff;
+}

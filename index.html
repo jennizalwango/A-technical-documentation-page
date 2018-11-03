@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JS Documentation</h2>
+
+    <main class="main_docu">
+
+
+        <div class="aside">
+            <h4 onclick="display1()"> Defination of Javascript</h4>
+            <h4 onclick="display2()">Strings in javascript</h4>
+            <h4 onclick="display3()">Conditions</h4>
+            <h4 onclick="display4()"> Datatypes</h4>
+            <h4 onclick="display5()"> Arrays</h4>
+        </div>
+
+
+        <div class="main-content">
+
+
+            <section class="content" id="display1">
+                <h4>Defination of Javascript</h4>
+
+                <p>Javascript is a light weight interpreted programming language
+                    used to make web pages interactive. Javascript is written in scipt tags in the html files
+                    .javascript
+                    can also be put in the external fiels.it is also a complied language.</p>
+            </section>
+
+
+            <section class="content" id="display2">
+
+                <h4>Strings in javascript</h4>
+                <p>Strings are useful for holding data that can be represented in text form.These can be words put in
+                    strings eg " " strings can be created using paratersis template literals. Strings can be in
+                    different
+                    ways primitive and distinctive strings.
+
+
+                </p>
+                <code>
+                        Forexample
+                        let strg = "my name is jenny"//this can be a string
+                   </code>
+            </section>
+
+
+
+
+            <section class="content" id="display3">
+                <h4>Conditions</h4>
+                <p>Condition are statements excuted is a specified Condition is true.there are so many condition
+                    statements
+                    like
+                    if else statements:these are used when having two statement
+                    if statements are executed if the statement is true
+                    elif statements:are used if you have more than two condition
+
+                </p>
+                <code>
+                 <u>The if statement</u>
+                   <pre>
+                        
+                        if (condition){
+                    statement1
+                        }else{
+                    statement2}
+                   </pre>
+                   <u>The elif</u>
+                   <pre>
+                       if(condition){
+                        statement1
+                       }elif{
+                        statement2
+                       }
+                   </pre>
+               </code>
+            </section>
+
+
+
+
+
+            <section class="content" id="display4">
+                <h4>Datatypes</h4>
+                <p>
+                    Programming languages have built-in data structures although they differ from one another depending
+                    on
+                    the languages.
+                    there are so many different Datatypes Forexample
+                    <li>Booleans</li>
+                    <li> Numbers</li>
+                    <li>Strings</li>
+                    <li>Undefined</li>
+                    <li>Null</li>
+
+
+                </p>
+            </section>
+
+            <section class="content" id="display5">
+                <h4>Arrays</h4>
+
+                <p>Array object is a global object that is used in the construction of arrays; which are high-level,
+                    list-like objects. </p>
+
+
+
+                <code>
+                        <pre>
+                                var fruits = ['Apple', 'Banana'];
+
+                                console.log(fruits.length);
+                                // 2
+                        </pre>
+                    </code>
+            </section>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+    <script>
+
+        ion
+        function display1() {
+            //sets display of current section to block
+            document.querySelector('#display1').style.display = "block";
+            document.querySelector('#display1').style.color = "blue";
+            //sets display of other sections to none
+            document.querySelector('#display4').style.display = "none";
+            document.querySelector('#display2').style.display = "none";
+            document.querySelector('#display3').style.display = "none";
+            document.querySelector('#display5').style.display = "none";
+
+        }
+        function display2() {
+            //sets display of current section to block
+            document.querySelector('#display2').style.display = "block";
+            document.querySelector('#display2').style.color = "blue";
+            //sets display of other sections to none
+            document.querySelector('#display1').style.display = "none";
+            document.querySelector('#display4').style.display = "none";
+            document.querySelector('#display3').style.display = "none";
+            document.querySelector('#display5').style.display = "none";
+        }
+
+        function display3() {
+            //sets display of current section to block
+            document.querySelector('#display3').style.display = "block";
+            document.querySelector('#display3').style.color = "blue";
+            //sets display of other sections to none
+            document.querySelector('#display1').style.display = "none";
+            document.querySelector('#display2').style.display = "none";
+            document.querySelector('#display4').style.display = "none";
+            document.querySelector('#display5').style.display = "none";
+        }
+
+        function display4() {
+            //sets display of current section to block
+            document.querySelector('#display4').style.display = "block";
+            document.querySelector('#display4').style.color = "blue";
+            //sets display of other sections to none
+            document.querySelector('#display1').style.display = "none";
+            document.querySelector('#display2').style.display = "none";
+            document.querySelector('#display3').style.display = "none";
+            document.querySelector('#display5').style.display = 'none';
+        }
+
+        function display5() {
+            //sets display of current section to block
+            document.querySelector('#display5').style.display = "block";
+            document.querySelector('#display5').style.color = "blue";
+            //sets display of other sections to none
+            document.querySelector('#display1').style.display = "none";
+            document.querySelector('#display2').style.display = "none";
+            document.querySelector('#display3').style.display = "none";
+            document.querySelector('#display4').style.display = 'none';
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
